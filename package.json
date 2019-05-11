@@ -1,0 +1,24 @@
+{
+  "name": "testingjs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "testing.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "node ./node_modules/mocha/bin/_mocha",
+    "start": "npm run",
+    "mytest": "concurrently \"http-server -a localhost -p 1234\" \"open http://localhost:1234/test/index\"",
+    "open": "concurrently \"http-server -a localhost -p 1234\" \"open http://localhost:1234/build/index\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "concurrently": "^4.1.0",
+    "http-server": "^0.11.1",
+    "mocha": "^6.1.4"
+  }
+}
